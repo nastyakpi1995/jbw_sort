@@ -2,42 +2,215 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="email.css">
+    <link rel="stylesheet" href="sends.css">
+    <link rel="stylesheet" href="modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <title>Jquery App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="body">
+      <header class="header">
+        <h1>Lorem ipsum dolor sit amet donec voluptatem ipsum dolor sit amet donex voluptatem</h1>
+        <div class="hide-login-btn"><g xmlns="http://www.w3.org/2000/svg" id="close-icon">
+          <path id="close-icon" d="M19.000,18.457 L18.457,19.000 L9.500,10.043 L0.543,19.000 L0.000,18.457 L8.957,9.500 L0.000,0.543 L0.543,0.000 L9.500,8.957 L18.457,0.000 L19.000,0.543 L10.043,9.500 L19.000,18.457 z" fill="#999999"/>
+          </g>
+        </div>
+      </header>
+    <main class="main">
+      <div class="information">
+          <h1>Profesional Custom Service Just <b class="text_yellow">for You</b></h1>
+          <p>We can do <b class="text_yellow">anything</b></p>
+      </div>
+     
+      <div class="login-box">
+          <form class="login-form" action="index.html" method="post">
+            <h1>Calculate the Price</h1>
+            <label class="lable__select">Choose level</label>
+            
+            <form class="login-box_nav-lang">
+                <div class="login-box_dropdown login-box_lang_drop">
+                  <span class="login-form__lang_drop-title">
+                      Hardcore
+                  </span>
+                  <div class="login-box_dropdown-content">
+                    <ul class="login-box_dropdown-content_list">
+                      <li class="login-box_dropdown-content_list-item ">
+                        <a class="dropdown_link" href="#!">Eeasy Core</a>
+                      </li>
+                      <li class="login-box_dropdown-content_list-item">
+                        <a class="dropdown_link" href="#!">Normal yCore</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            <!-- <select id="my_select" class="select__container" name="my_select">
+              <option value="1">Hardcore</option>
+              <option value="2">two</option>
+              <option value="3">three</option>
+            </select> -->
+          <p class="" >How many</p>      
+            <!-- <input class="txtb" type="text"name="" placeholder="Use">
+            <input class="txtb" type="text"name="" placeholder="Password">
+            <input class="login-btn" type="submit" name="" value="Login"> -->
+            
+          </form>
+          <div class="main-cart"></div>
+          <button class=" show-login-btn button_pop_up">Pop Up</button>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          <div class="email-field">
+            <div class="email__hide-login-btn show-login-btn"><g xmlns="http://www.w3.org/2000/svg" id="close-icon">
+              <path id="close-icon" d="M19.000,18.457 L18.457,19.000 L9.500,10.043 L0.543,19.000 L0.000,18.457 L8.957,9.500 L0.000,0.543 L0.543,0.000 L9.500,8.957 L18.457,0.000 L19.000,0.543 L10.043,9.500 L19.000,18.457 z" fill="#999999"/>
+              </g>
+            </div>
+            <h1>Ask us how we can help you</h1>
+            <p class="email-field-text">Lorem ipsum dolor sit amet </p>
+                <p class="email-field-name-text">Enter your name 
+                <div class="email-field-name">
+                  <img src="./user_icon.svg"> 
+                  <input type="text" id="ename">
+                </div>
+                </p>
+            <p class="email-field-email email-field-name-text">Enter your email 
+              <div class="email-field-email email-field-name">
+                  <img src="./email_icon.svg"> 
+                  <input type="text" id="email" placeholder="example@gmail.com">
+                </div>
+            </p>
+            <p class="email-field-phone email-field-name-text">Your phone
+                <div class="email-field-phone email-field-name">
+                    <img src="./FLAG.png"> 
+                    <div class="divider"></div>
+                    <input type="text" id="ephone">
+                  </div>
+              </p>
+            <p class="send-email"><button>Continue</button></p> 
+          </div>
+          
+          <div class="send_email">
+            <div class="send-email_close"> <img class="email__hide-send_email" src="./close_icon.svg" alt="close window"></div>
+                 
+                  <img src="./envelope.svg" alt="Check your email">
+                  <h1  class="send-email_text">Thank you</h1>
+                  <p class="send-email_check">please Check your email</p>
+                     
+                  <p class="send__email_button"><button class="send-email_button">Ok, tnx</button></p> 
+                </div>
+          
+        </div>
+        <div>
+          <div class="mini-cart"></div>
+          <div class="goods-out"></div>
+        </div>
+      
+    </main>
+  </div>
+  <script type="text/javascript">
+var cart = {id:1};
+function LoadCart() {
+    cart = JSON.parse(localStorage.getItem('cart'));
+      showCart();
+}
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+function showCart() {
+  goodsOut();
+}
+function goodsOut() {
+    var out = '';
+    var id = 1;
+      out += ` <div class="main_plus_mine">`;
+      out += ` <div class="container">`;
+      out += ` <button class="minus">-</button>`;
+      out += `${cart.id}`;
+      out += `<button data-id="${id}" class="plus-goods">+</button>`;
+      out += ` </div>`;
+      out += ` </div>`;
+      out += `<button class="cost">${cart.id* 10.99}</button>`;
+      out += ``;
+    $('.main-cart').html(out);
+    $('.plus-goods').on('click', plusGoods);
+    $('.minus').on('click', minusGoods);
+}
+
+function minusGoods() {
+  if (cart.id == 1) {
+    cart.id;
+  } else {
+    cart.id--;
+  }
+  saveCart()
+  showCart();
+}
+function plusGoods() {
+  cart.id++;
+  saveCart()
+  showCart();
+}
+
+
+function saveCart() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+function changeFont(_name) {
+    document.getElementById("ename").style.fontFamily = _name;
+}
+function sendEmail() {
+  var ename = $('#ename').val();
+  var email = $('#email').val();
+  var ephone= $('#ephone').val();
+  var correctEmail = email.split('').filter(partEmail => partEmail === '@').length;
+  console.log(correctEmail)
+  if (ename != '' && ename.length > 3 && email!= '' && ephone!='' && correctEmail === 1) {
+      $.post(
+        "core/mail.php",
+        {
+          "ename": ename,
+          "email": email,
+          "ephone": ephone,
+          "cart": cart
+        },
+        function(data){
+        
+          console.log(data);
+        }
+      )
+      $(".send_email").toggleClass("showed_end");
+      $(".email-field").toggleClass("hidden_close");
+  
+  } else {
+    alert('error');
+  }
+}
+
+$(document).ready(function () {
+  LoadCart();
+  $('.send-email').on('click', sendEmail)
+})
+
+  </script>
+    <script type="text/javascript">
+       $(".show-send__email").on("click",function(){
+        $(".send_email").toggleClass("show_email_close");
+      })
+      $(".send-email_button").on("click",function() {
+        $(".send_email").toggleClass("hidden");
+      })
+      
+      $(".show-login-btn").on("click",function(){
+        $(".email-field").toggleClass("showed_email");
+      })
+      $(".hide-login-btn").on("click",function(){
+        $(".login-box").toggleClass("showed");
+      })
+      $(".email__hide-send_email").on("click",function(){
+        $(".send_email").toggleClass("send__email_close");
+      })
+    </script>
+
   </body>
 </html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9" width="13" height="9">
+	<defs>
+		<image width="13" height="9" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJAQMAAADTtDQpAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAAF0Uk5T/23kN+sAAAALSURBVHicY2DACQAAGwAByjxKDQAAAABJRU5ErkJggg=="/>
+		<image width="13" height="9" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJBAMAAAAbVLtZAAAAAXNSR0IB2cksfwAAADBQTFRF////7+/v0NDQxMTE/Pz8t7e3OTk5xcXFoKCg2traoaGhxsbGNzc3Ojo6p6enx8fH6QnQ+wAAABB0Uk5T/////////////////////80hspQAAAAwSURBVHicY2BAA4wKDAzMDgwMrOkMDG0TgALLCjiyQRJc6W0bwCrW3Iao5PuApA0A57kHnFVIqvYAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<use id="Слой 1" href="#img2" x="0" y="0" />
+</svg>

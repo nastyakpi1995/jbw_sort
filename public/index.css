@@ -1,0 +1,74 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+ 
+}
+.main {
+  height: 1000px !important;
+} 
+.header {
+  display: flex;
+  background: #629b57;
+  justify-content: space-around;
+}
+.header h1{
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  margin: 0 auto;
+}
+.hide-login-btn {
+  background-image: url(./close_icon.svg);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 10px;
+  right: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.main {
+  background-image: linear-gradient(45deg, #60a75e, #6cc76c);
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: start;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+.text_yellow {
+  color: #ffea00;
+}
+.information {
+  color: #fff;
+  display: inline-block;
+  width: 568px;
+  font-size: 26px;
+  margin: 0 auto;
+}
+
+
+.txtb {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  background: #ffffff28;
+  border: 1px solid a1a1a1;
+  padding: 10px 20px;
+  color: white;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.login-btn {
+  width: 240px;
+  background: #2c3e50;
+  border: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

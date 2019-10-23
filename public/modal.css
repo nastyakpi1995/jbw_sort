@@ -1,0 +1,73 @@
+.send_email {
+  position: absolute;
+  display: none;
+  width: 500px;
+  height: 340px;
+  padding: 40px;
+  top: -48px;
+  right: 275px;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #559453;
+  transition: 0.4s;
+} 
+.showed_end {
+  display: flex;
+} 
+.show_email_close {
+  display: flex;
+}
+.email-field {
+  background: #fff;
+  display: none;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #559453;
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  transition: 0.4s;
+}
+.hidden_close {
+  display: none !important;
+}
+.hidden {
+  display: none !important;
+}
+.showed_email {
+  display: inline-block;
+  position: relative;
+  right: 276px;
+  width: 455px;
+  bottom: 343px;
+  height: 500px;
+}
+
+.form__login {
+  color: #999;
+}
+
+.login-box {
+  position: relative;
+  font-family: 'Jomolhari', serif;
+  background: #fff;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #559453;
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  transition: 0.4s;
+}
+
+
+.showed {
+  position: absolute;
+  left: -100%;
+}
+.send__email_close {
+  display: none;
+}
