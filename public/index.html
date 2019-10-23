@@ -152,7 +152,6 @@ function plusGoods() {
   showCart();
 }
 
-
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
@@ -164,7 +163,6 @@ function sendEmail() {
   var email = $('#email').val();
   var ephone= $('#ephone').val();
   var correctEmail = email.split('').filter(partEmail => partEmail === '@').length;
-  console.log(correctEmail)
   if (ename != '' && ename.length > 3 && email!= '' && ephone!='' && correctEmail === 1) {
       $.post(
         "core/mail.php",
