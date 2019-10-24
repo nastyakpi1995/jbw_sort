@@ -21,14 +21,21 @@
   display: flex;
 }
 .email-field {
-  background: #fff;
   display: none;
+  width: 455px;
+  height: 500px;
+
+  position: relative;
+  right: 276px;
+  bottom: 343px;
+
+  background: #fff;
   box-sizing: border-box;
   box-shadow: 0 0 10px #559453;
-  width: 400px;
-  height: 250px;
+ 
   padding: 30px;
   transition: 0.4s;
+  /* display: inline-block; */
 }
 .hidden_close {
   display: none !important;

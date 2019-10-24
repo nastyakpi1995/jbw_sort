@@ -61,8 +61,13 @@
   margin: 0 5px;
 }
 
+@media (max-width: 400px ) {
+  .body {
+    background: black;
+  }
+}
+
 @media (max-width: 500px) {
- 
   .login-form__lang_drop-title {
     width: 100%;
     height: 29px;
@@ -120,6 +125,11 @@
   .main-cart {
     justify-content: space-between;
   }
+  .email__hide-login-btn { 
+    width: 61px;
+    right: 108px;
+    position: relative;
+  }
   .main_plus_mine {
     margin-right: 30px;
     width: 45%;
@@ -148,5 +158,16 @@
   }
   .hide-login-btn { 
     right: 10px;
+  }
+  .showed_email {
+    right: 0 !important;
+    width: 100% !important;
+    margin-top: 122px;
+    margin: 117px auto;
+  }
+  .send_email {
+    margin-top: 49px;
+    height: 340px;
+    right: 0 !important;
   }
 }

@@ -144,16 +144,3 @@
   justify-content: center;
 }
 
-@media (max-width: 500px) {
-  .showed_email {
-    right: 0 !important;
-    width: 100% !important;
-    margin-top: 122px;
-    margin: 117px auto;
-  }
-  .send_email {
-    margin-top: 49px;
-    height: 340px;
-    right: 0 !important;
-  }
-}

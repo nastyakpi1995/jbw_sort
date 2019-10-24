@@ -23,7 +23,7 @@
       </header>
     <main class="main">
       <div class="information">
-          <h1>Profesional Custom Service Just <b class="text_yellow">for You</b></h1>
+          <h1>Profesional Custom<br> Service Just <b class="text_yellow">for You</b></h1>
           <p>We can do <b class="text_yellow">anything</b></p>
       </div>
      
@@ -43,28 +43,23 @@
                         <a class="dropdown_link" href="#!">Eeasy Core</a>
                       </li>
                       <li class="login-box_dropdown-content_list-item">
-                        <a class="dropdown_link" href="#!">Normal yCore</a>
+                        <a class="dropdown_link" href="#!">NormalyCore</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </form>
-            <!-- <select id="my_select" class="select__container" name="my_select">
-              <option value="1">Hardcore</option>
-              <option value="2">two</option>
-              <option value="3">three</option>
-            </select> -->
           <p class="" >How many</p>      
-            <!-- <input class="txtb" type="text"name="" placeholder="Use">
-            <input class="txtb" type="text"name="" placeholder="Password">
-            <input class="login-btn" type="submit" name="" value="Login"> -->
-            
           </form>
           <div class="main-cart"></div>
           <button class=" show-login-btn button_pop_up">Pop Up</button>
 
           <div class="email-field">
-            <div class="email__hide-login-btn show-login-btn"><g xmlns="http://www.w3.org/2000/svg" id="close-icon">
+            <div class="
+            email__hide-login-btn 
+          
+              " 
+            ><g xmlns="http://www.w3.org/2000/svg" id="close-icon">
               <path id="close-icon" d="M19.000,18.457 L18.457,19.000 L9.500,10.043 L0.543,19.000 L0.000,18.457 L8.957,9.500 L0.000,0.543 L0.543,0.000 L9.500,8.957 L18.457,0.000 L19.000,0.543 L10.043,9.500 L19.000,18.457 z" fill="#999999"/>
               </g>
             </div>
@@ -73,23 +68,23 @@
                 <p class="email-field-name-text">Enter your name 
                 <div class="email-field-name">
                   <img src="./user_icon.svg"> 
-                  <input type="text" id="ename">
+                  <input type="text" id="ename" min="3">
                 </div>
                 </p>
             <p class="email-field-email email-field-name-text">Enter your email 
               <div class="email-field-email email-field-name">
                   <img src="./email_icon.svg"> 
-                  <input type="text" id="email" placeholder="example@gmail.com">
+                  <input type="email" id="email" placeholder="example@gmail.com">
                 </div>
             </p>
             <p class="email-field-phone email-field-name-text">Your phone
                 <div class="email-field-phone email-field-name">
                     <img src="./FLAG.png"> 
                     <div class="divider"></div>
-                    <input type="text" id="ephone">
+                    <input type="number" id="ephone" min="7" max="7">
                   </div>
               </p>
-            <p class="send-email"><button>Continue</button></p> 
+            <p class="send-email"><button type="submit">Continue</button></p> 
           </div>
           
           <div class="send_email">
@@ -152,6 +147,7 @@ function plusGoods() {
   showCart();
 }
 
+
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
@@ -163,7 +159,9 @@ function sendEmail() {
   var email = $('#email').val();
   var ephone= $('#ephone').val();
   var correctEmail = email.split('').filter(partEmail => partEmail === '@').length;
-  if (ename != '' && ename.length > 3 && email!= '' && ephone!='' && correctEmail === 1) {
+  if (ename != ''
+   && ename.length > 2
+    && email!= '' && ephone!='' && correctEmail === 1) {
       $.post(
         "core/mail.php",
         {
@@ -173,7 +171,6 @@ function sendEmail() {
           "cart": cart
         },
         function(data){
-        
           console.log(data);
         }
       )
@@ -181,7 +178,7 @@ function sendEmail() {
       $(".email-field").toggleClass("hidden_close");
   
   } else {
-    alert('error');
+    alert('please correct fill form');
   }
 }
 
@@ -193,20 +190,28 @@ $(document).ready(function () {
   </script>
     <script type="text/javascript">
        $(".show-send__email").on("click",function(){
-        $(".send_email").toggleClass("show_email_close");
+        $(".send_email").fadeIn(8800)
+        // $(".send_email").toggleClass("show_email_close");
       })
       $(".send-email_button").on("click",function() {
         $(".send_email").toggleClass("hidden");
       })
+      $(".email__hide-login-btn").on("click",function() {
+        $(".email-field").fadeOut(300);
+      })
+      
       
       $(".show-login-btn").on("click",function(){
-        $(".email-field").toggleClass("showed_email");
+        $(".email-field").fadeIn(300)
+        // toggleClass("showed_email");
       })
       $(".hide-login-btn").on("click",function(){
-        $(".login-box").toggleClass("showed");
+        $(".login-box").fadeOut(300)
+        // .toggleClass("showed");
       })
       $(".email__hide-send_email").on("click",function(){
-        $(".send_email").toggleClass("send__email_close");
+        $(".send_email").fadeOut(300)
+        // .toggleClass("send__email_close");
       })
     </script>
 
