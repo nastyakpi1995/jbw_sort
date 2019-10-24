@@ -37,12 +37,6 @@
   transition: 0.4s;
   /* display: inline-block; */
 }
-.hidden_close {
-  display: none !important;
-}
-.hidden {
-  display: none !important;
-}
 .showed_email {
   display: inline-block;
   position: relative;
@@ -68,13 +62,4 @@
   height: 300px;
   padding: 30px;
   transition: 0.4s;
-}
-
-
-.showed {
-  position: absolute;
-  left: -100%;
-}
-.send__email_close {
-  display: none;
 }
