@@ -101,7 +101,8 @@
               </div>
             </p>
             <p class="send-email">
-              <button type="submit">
+              <button class="show__finish_button"
+                      type="submit">
                 Continue
               </button>
             </p> 
@@ -214,6 +215,10 @@ $(document).ready(function () {
 </script>
 
 <script type="text/javascript">
+  $(".show__finish_button").on("click",function(){
+  $(".send_email").fadeIn(8800)
+})
+ 
 $(".show-send__email").on("click",function(){
   $(".send_email").fadeIn(8800)
 })
