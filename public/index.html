@@ -133,10 +133,10 @@
 <script type="text/javascript">
 var cart = { id:1 };
 
-function LoadCart() {
-  cart = JSON.parse(localStorage.getItem('cart'));
-  showCart();
-}
+// function LoadCart() {
+//   cart = JSON.parse(localStorage.getItem('cart'));
+//   showCart();
+// }
 
 function showCart() {
   goodsOut();
@@ -209,7 +209,7 @@ function sendEmail() {
 }
 
 $(document).ready(function () {
-  LoadCart();
+  // LoadCart();
   $('.send-email').on('click', sendEmail)
 })
 </script>
