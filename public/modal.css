@@ -37,6 +37,14 @@
   transition: 0.4s;
   /* display: inline-block; */
 }
+
+.hidden_close {
+  display: none !important;
+}
+.showed_end {
+  display: none !important;
+}
+
 .showed_email {
   display: inline-block;
   position: relative;
